@@ -11,7 +11,7 @@ cuando sea posible. Por lo tanto se asumen algunas carencias para permitir
 que sea entendible y extensible.
 
 
-Subsistemas, apps y proyecto base
+Subsistemas, apps y proyecto base (actualizar con GitActions + Codacy)
 ---------------------------------
 
 El proyecto se divide en [subsistemas](doc/subsistemas.md), los cuales estarán desacoplados
