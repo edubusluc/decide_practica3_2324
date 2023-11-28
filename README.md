@@ -1,3 +1,5 @@
+[![Python application](https://github.com/edubusluc/decide_practica3_2324/actions/workflows/django.yml/badge.svg)](https://github.com/edubusluc/decide_practica3_2324/actions/workflows/django.yml)
+
 Plataforma voto electrónico educativa
 =====================================
 
@@ -11,7 +13,7 @@ cuando sea posible. Por lo tanto se asumen algunas carencias para permitir
 que sea entendible y extensible.
 
 
-Subsistemas, apps y proyecto base
+Subsistemas, apps y proyecto base (actualizar con GitActions + Codacy)
 ---------------------------------
 
 El proyecto se divide en [subsistemas](doc/subsistemas.md), los cuales estarán desacoplados

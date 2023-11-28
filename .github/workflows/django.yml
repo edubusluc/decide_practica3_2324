@@ -1,16 +1,30 @@
 name: Python application
 
-on: [push]
+on:
+  push:
+     branches:
+      - main
+  pull_request:
+      branches:
+        - main
+  workflow_call:
+    secrets:
+      CODACY_PROJECT_TOKEN:
+        required: true
   
+
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        pyversion: ['3.10.12','3.11']
+        sqlversion: ['14.9','15']
 
     services:
       postgres:
-        image: postgres:14.9
+        image: postgres:${{ matrix.sqlversion }}
         env:
           POSTGRES_USER: decide
           POSTGRES_PASSWORD: decide
@@ -19,13 +33,13 @@ jobs:
           - 5432:5432
         # needed because the postgres container does not provide a healthcheck
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-
+ 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.10.12
+    - name: Set up Python ${{matrix.pyversion}}
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10.12
+        python-version: ${{matrix.pyversion}}
     - name: psycopg2 prerequisites
       run: sudo apt-get install libpq-dev
     - name: Install dependencies and config
