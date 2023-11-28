@@ -4,6 +4,7 @@ on:
   push:
      branches:
       - main
+      - develop
   pull_request:
       branches:
         - main
@@ -12,7 +13,6 @@ on:
       CODACY_PROJECT_TOKEN:
         required: true
   
-
 
 jobs:
   build:
