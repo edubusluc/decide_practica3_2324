@@ -14,7 +14,7 @@ on:
   
 jobs:
   build:
-  strategy:
+    strategy:
       matrix:
         pyversion: ['3.10.12','3.11']
 
