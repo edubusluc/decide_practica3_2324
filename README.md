@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/22a23ae072b24dcf9200ba99a834c2cc)](https://app.codacy.com/gh/edubusluc/decide_practica3_2324?utm_source=github.com&utm_medium=referral&utm_content=edubusluc/decide_practica3_2324&utm_campaign=Badge_Grade)
 [![Python application](https://github.com/edubusluc/decide_practica3_2324/actions/workflows/django.yml/badge.svg)](https://github.com/edubusluc/decide_practica3_2324/actions/workflows/django.yml)
 
 Plataforma voto electrónico educativa
