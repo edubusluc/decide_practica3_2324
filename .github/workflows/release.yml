@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   buildTest:
-    uses: edubusluc/decide_practica3_2324/.github/workflows/django.yml@main
+    uses: edubusluc/decide_practica3_2324/.github/workflows/django.yml@develop
     secrets: 
       CODACY_PROJECT_TOKEN: ${{secrets.CODACY_PROJECT_TOKEN}}
      
